@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="viewmodels.RoomOne"
+    android:id="@+id/gameTwo">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="790dp"
+        android:layout_height="747dp"
+        app:srcCompat="@drawable/room_two" />
+    <TextView
+        android:id="@+id/HealthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="19dp"
+        android:text="Health: "
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="40dp"
+        android:text="Score: "
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</RelativeLayout>

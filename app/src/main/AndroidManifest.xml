@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.s0">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.S0"
+        tools:ignore="ExtraText">
+        <activity
+            android:name="com.example.s0.viewmodels.WelcomeScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".viewmodels.ConfigScreen"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".model.GameActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".viewmodels.EndScreen"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".viewmodels.RoomOne"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".viewmodels.RoomTwo"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".viewmodels.RoomThree"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".viewmodels.GameOverScreen"
+            android:exported="true">
+        </activity>
+    </application>
+
+</manifest>

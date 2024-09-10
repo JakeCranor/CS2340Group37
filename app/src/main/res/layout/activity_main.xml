@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewmodels.ConfigScreen">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="fantasy"
+        android:shadowColor="#000000"
+        android:shadowRadius="5"
+        android:text="Enter User Name:"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#0BDA51"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="fantasy"
+        android:shadowColor="#000000"
+        android:shadowRadius="5"
+        android:text="Error: name"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="218dp"
+        android:layout_height="63dp"
+        android:hint="Type Here"
+        android:inputType="textPersonName|textCapWords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextContrastCheck"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="60dp"/>
+
+    <RadioGroup
+        android:id="@+id/difficultyRadioGroup"
+        android:layout_width="168dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="220dp">
+
+        <RadioButton
+            android:id="@+id/radioEasy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Easy" />
+
+        <RadioButton
+            android:id="@+id/radioMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/radioHard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hard" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/characterRadioGroup"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="425dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCharacter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RadioButton
+            android:id="@+id/radioCharacter1"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Red" />
+
+        <RadioButton
+            android:id="@+id/radioCharacter2"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:text="Blue" />
+
+        <RadioButton
+            android:id="@+id/radioCharacter3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grey" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="580dp"
+        android:background="@color/black"
+        android:backgroundTint="@android:color/black"
+        android:text="Start"
+        app:iconTint="#FFFFFF"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="623dp" />
+
+    <TextView
+        android:id="@+id/textDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="170dp"
+        android:fontFamily="fantasy"
+        android:shadowColor="#000000"
+        android:shadowRadius="5"
+        android:text="Select Difficulty"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#0BDA51"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints,TextContrastCheck"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <TextView
+        android:id="@+id/textCharacter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="fantasy"
+        android:shadowColor="#000000"
+        android:shadowRadius="5"
+        android:text="Select Character"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#0BDA51"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints,TextContrastCheck"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="399dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="380dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="126dp"
+        android:layout_height="69dp"
+        app:srcCompat="@drawable/redastronaut"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="475dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="126dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="475dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/blueastronaut" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="126dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="475dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/blackandwhiteastronaut" />
+
+
+</RelativeLayout>
